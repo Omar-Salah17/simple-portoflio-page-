@@ -1,0 +1,292 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:  border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: black;
+    width: 100%;
+    position:fixed;
+    z-index: 9999;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 200px;
+}
+.logo
+{
+    text-decoration: none;
+    color:blue;
+    font-weight: bold;
+    font-size:1.8em;
+}
+.navigation a
+{
+   text-decoration: none;
+   color:blue;
+   font-weight: 700;
+   padding-left: 30px;
+}
+.navigation a:hover 
+{
+    color: red;
+}
+section
+{
+    padding:100px 200px
+}
+.main
+{
+    width: 100%;
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    background: url(images/v3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2{
+    color:white;
+    font-size: 1.4em;
+    font-weight: 400;
+
+}
+.main h2 span
+{
+  display:inline-block;
+  color:white;
+  font-size:3em;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.mainb
+{
+    text-decoration: none;
+    color: black;
+    background-color: blue;
+    font-size: 1.1em;
+    font-weight: 600;
+    display:inline-block;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 1s ease;
+}
+.mainb:hover
+{
+    background-color: darkblue;
+    transform: scale(1.2);
+}
+.s a 
+{
+    color:white;
+    font-size:1.5em ;
+    padding-left: 10px;
+    transition: 1s ease;
+    border-radius:10px ;
+}
+.s a :hover
+{
+ 
+    transform: scale(1.4);
+}
+.title
+{
+    display: flex;
+    width:100%;
+    justify-content:center;
+    color: blue;
+    font-size: 3em;
+    margin-bottom:30px ;
+    font-weight: 800;
+}
+.cont
+{
+    background-color:whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.card
+{
+    background-color:blue;
+    color: black;
+    border-radius: 20px;
+    transition: 1s ease;
+    width: 15em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 50%);
+    padding:15px;
+    margin:25px;
+}
+.card:hover
+{
+    background-color: darkblue;
+    transform: scale(1.2);
+}
+.icon
+{
+    color: white;
+    font-size: 8em;
+    text-align: center;
+}
+.info
+{
+    text-align: center;
+}
+.info h3{
+    color: white;
+    font-size:2em;
+    font-weight: 700;
+    margin:20px; 
+}
+.projects
+{
+    background-color: black;
+}
+.my
+{
+    margin :40px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   
+
+}
+.pcard
+{
+    background-color: white;
+    border: 1px solid white;
+    min-height: 12em;
+    width: 18em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin:20px;
+    transition: 1s ease;
+}
+.pcard:hover
+{
+    transform: scale(1.2);
+}
+.images img{
+    width:100%;
+    min-height: 27vh;
+  
+}
+.p-info
+{
+    padding :1em;
+
+}
+.p-title
+{
+    display:flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+.p-title span{
+    color:blue
+}
+.more 
+{
+    transition: 1s ease;
+    border-radius: 40px;
+    color: white;
+    background: blue;
+    text-decoration: none;
+}
+.more:hover{
+    transform: scale(1.1);
+    background-color: darkblue;
+}
+.c-cont
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:5px;
+    justify-content: space-around;
+}
+.c-card
+{
+    background-color: white;
+    color:black;
+    font-size: 1em;
+    font-weight: 300;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    width:20em;
+    transition: 1s ease;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 50%);
+   
+}
+.c-card:hover{
+    transform: scale(1.1);
+}
+.c-icon
+{
+    color: blue;
+    font-size: 2em;
+    text-align:center;
+}
+.c-title
+{
+    font-weight: bold;
+    margin:5px;
+}
+.foot{
+
+    background-color: black;
+    color: blue;
+    display :flex;
+    justify-content: space-between;
+    padding:2em;
+}
+.foot s{
+ 
+    color: white;
+}
+.f-title
+{
+    font-size: 1.3em;
+    font-weight: 600;
+    color: white;
+}
+.f-title span{
+    color: blue;
+}
+@media(max-width :1023px)
+{
+    header 
+    {
+        padding :10px 20px;
+    }
+    .navigation a
+    {
+        padding-left :5px;
+    }
+    section{
+        padding :80px 20px;
+    }
+    .main h2{
+
+        font-size: 1em;
+
+    }
+    .cont{
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+}
